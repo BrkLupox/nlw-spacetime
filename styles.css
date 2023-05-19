@@ -121,12 +121,13 @@ aside * {
   animation: asidezinho 2s ease-in-out;
 }
 
-aside img:nth-child(2) {
+aside a img{
   width: 160px;
   height: 160px;
   border-radius: 50%;
   border: 4px solid transparent;
-  background: linear-gradient(#d39333 , #ed5636 , #633bbc) padding-box, linear-gradient(260deg , #d39333 , #ed5636 , #633bbc) border-box;
+  background: linear-gradient(#4282BE , #4A3193 , #A88DF5) padding-box, linear-gradient(260deg , #4282BE , #4A3193 , #A88DF5) border-box;
+  animation: asidezinho 2s ease-in-out;
   
 }
 
@@ -140,13 +141,97 @@ aside span {
   color: #9e9ea0;  
 }
 
-#penis {
+#status {
   display: grid;
   height: 50px;
   grid-template-columns: 1fr 50%;
-  grid-template-rows: 0.2fr 30px;
+  grid-template-rows: 0.4fr 40px;
   color: #bebebf;
   text-align: center;
+}
+
+#gamesname {
+  text-align: center;
+  font-size: 12px;
+  display: grid;
+  height: 40px;
+  grid-template-columns: 1fr 1fr 30%;
+  grid-template-rows: 100%;
+  align-items: center;
+}
+
+#imagens {
+  height: auto;
+  font-size: 18px;
+  text-align: center;
+  display: grid;
+  background: linear-gradient(#21282e , #171324 , #120533);
+  border: 2px solid #6a6ae2 ;
+  border-radius: 5px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 70px 70px 70px 70px 70px; 
+  grid-template-areas:"a f" 
+                      "b g"  
+                      "c h"
+                      "d i"
+                      "e j";
+  align-items: center;
+  
+}
+ 
+#imagens img {
+  scale: 0.21;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+#img1 {
+  grid-area: a;
+}
+#img2 {
+  grid-area: b;
+}
+#img3 {
+  grid-area: c;
+}
+#img4 {
+  grid-area: d;
+}
+#img5 {
+  grid-area: e;
+}
+#csgo1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#lol1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+#minecraft {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  
+}
+#PoE1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#WarThunder1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 
 @media (max-width: 768px){
